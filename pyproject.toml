@@ -1,0 +1,46 @@
+[project]
+name = "direction-conditioned-policy"
+version = "1.0.0"
+description = "Direction-Conditioned Policies for online goal-conditioned reinforcement learning."
+readme = "README.md"
+license-files = ["LICENSE"]
+requires-python = ">=3.11"
+dependencies = [
+  "jax[cuda12]",
+  "flax>=0.10.0",
+  "brax>=0.14.2",
+  "matplotlib>=3.8.4",
+  "mujoco>=3.6.0",
+  "mujoco-mjx>=3.6.0",
+  "numpy<2",
+  "scipy>=1.12",
+  "tyro>=0.9.16",
+  "wandb",
+  "wandb-osh",
+]
+
+[project.scripts]
+dcp = "run:cli"
+
+[tool.uv]
+find-links = [ "https://storage.googleapis.com/jax-releases/jax_cuda_releases.html" ]
+
+[[tool.uv.index]]
+url = "https://pypi.nvidia.com/"
+
+[build-system]
+requires = [ "setuptools", "wheel" ]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = { find = { include = ["jaxgcrl*"] } }
+include-package-data = true
+py-modules = [ "run" ]
+
+[tool.setuptools.package-data]
+"jaxgcrl.envs" = ["assets/*"]
+
+[tool.ruff]
+line-length = 110
+indent-width = 4
+target-version = "py311"
