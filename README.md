@@ -2,7 +2,7 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-2610.05087-b31b1b.svg)](https://arxiv.org/abs/2610.05087)
 
-**S K Swaminathan, Damiya Gondha, Theyanesh Eswaramoorthy Rajahkrishnan, Aritra Hazra**
+**S K Swaminathan, Damiya Gondha, Theyanesh Eswaramoorthy Rajahkrishnan, Aritra Hazra**<br>
 Indian Institute of Technology Kharagpur
 
 Contrastive RL (CRL) learns a critic whose representation encodes which goals are reachable from where, but its policy still reads goals as raw coordinates. **Direction-Conditioned Policies (DCP)** give the actor that geometry directly: the actor is conditioned on the direction and distance to its target in the critic's own goal-representation space. DCP keeps the CRL objective, the network depth, and the actor loss, and needs no waypoint selection or planning at deployment.
