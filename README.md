@@ -138,7 +138,7 @@ scripts/          Benchmark launcher, summaries, and controlled studies
 If you find this work useful, please cite:
 
 ```bibtex
-@misc{swaminathan2026directionconditionedpoliciesonlinegoalconditioned,
+@misc{swaminathan2026dcp,
   title         = {Direction-Conditioned Policies for Online Goal-Conditioned Reinforcement Learning},
   author        = {S K Swaminathan and Damiya Gondha and Theyanesh Eswaramoorthy Rajahkrishnan and Aritra Hazra},
   year          = {2026},
