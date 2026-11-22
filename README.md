@@ -55,6 +55,8 @@ A CRL actor widened to DCP's parameter count reaches 4.7% success on PusherEasy,
   <img src="assets/u_maze_distance_fields.png" width="85%" alt="Graph shortest-path distance and learned representation distances for CRL and DCP in the U-maze.">
 </p>
 
+Rollouts on PusherHard with the same task and goal (evaluation seed 123): [DCP](videos/dcp_pusher_hard_s123.mp4) completes the push, while [CRL](videos/crl_pusher_hard_s123.mp4) does not.
+
 ## Installation
 
 Requires Linux, Python 3.12, and an NVIDIA GPU with a CUDA 12 driver. Dependencies are pinned in `uv.lock`.
